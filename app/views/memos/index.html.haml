@@ -1,0 +1,10 @@
+%h1 Listing memos
+
+#memos
+  - @memos.each do |memo|
+    = render 'show', memo: memo
+
+%br
+
+%h1 New memo
+= render 'form', memo: @new_memo, submit_text: 'Create'
